@@ -1,0 +1,22 @@
+a:link {
+    color: red;
+  }
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+  
+  .divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+ }
+ 

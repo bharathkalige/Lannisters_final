@@ -1,0 +1,139 @@
+<!-- <app-navbar></app-navbar> -->
+<html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div [style.display]="id01" class="modal">
+        <form ngNativeValidate class="modal-content animate" action="" method="POST" #userForm='ngForm'
+            (ngSubmit)="onSubmitLogin()">
+            <div class="imgcontainer">
+                <span class="close" (click)='onClickGone()' title="Close Modal">&times;</span>
+                <h1>Login</h1>
+                <!-- <img src="./assets/Images/dbs-bank.png" alt="Avatar" class="avatar"> -->
+            </div>
+            <div class="container">
+                <label for="email"><b>Email ID</b></label>
+                <input type="text" [(ngModel)]="user.email" placeholder="Enter Email id" name="email" required>
+                <label for="psw"><b>Password</b></label>
+
+                <div class="input-icons">
+                    <i [className]="val2" aria-hidden="true" (click)="viewPassword()">
+                    </i>
+                    <input [type]="val" type="password" [(ngModel)]="user.password" placeholder="Enter Password"
+                        name="password" required>
+                </div>
+                <button type="submit">Login</button>
+                <!-- <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label> -->
+            </div>
+            <span>{{message1.message}}</span>
+            <div class="container" style="background-color:#f1f1f1">
+                <button (click)='onClickGone()' class="cancelbtn">Cancel</button>
+                <span class="psw"> New User? <a (click)='onRegister()'>Register</a></span>
+                <!-- <span class="psw"><a href="#">Forgot password?</a></span> -->
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- REGISTER PAGE -->
+
+
+
+    <div [style.display]="id02" class="modal">
+        <form ngNativeValidate action="" method="POST" #userForm='ngForm' (ngSubmit)="onSubmitRegister()"
+            class="modal-content animate">
+            <div class="imgcontainer">
+                <span class="close" title="Close Modal" (click)='onClickGone()'>&times;</span>
+                <h1>Register</h1>
+            </div>
+            <div class="container form-group">
+                <div>
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" class="form-control" [(ngModel)]="user.name" placeholder="Enter Name" name="name"
+                        required>
+
+                </div>
+                <div>
+                    <label for="emailid"><b>Email Id</b></label>
+                    <input type="text" [(ngModel)]="user.email" placeholder="Enter Email id" name="email"
+                        class="form-control" required>
+
+                </div>
+                <div class="input-icons">
+                    <label for="password"><b>Password</b></label>
+                    <i [className]="val2" aria-hidden="true" (click)="viewPassword()">
+                    </i>
+                    <input [type]="val" type="password" [(ngModel)]="user.password" placeholder="Enter Password"
+                        name="password" required>
+                </div>
+                <button type="submit">Register</button>
+
+            </div>
+            <div class="container" style="background-color:#f1f1f1"></div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" (click)='onClickGone()' class="cancelbtn">Cancel</button>
+            </div>
+            <span>{{message1.message}}</span>
+        </form>
+    </div>
+
+    <!-- REGISTERED MODAL -->
+
+
+    <div [style.display]="id03" class="modal">
+        <div class="modal-content animate" style="margin-top: 300px">
+            <div class="imgcontainer">
+                <span class="close" (click)='onClickGone()' title="Close Modal">&times;</span>
+                <h1>{{str1}}</h1>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<!-- 
+<body>
+    <div>
+        <form class="modal-content animate" method="POST" #userForm='ngForm' (ngSubmit)="onSubmit()">
+            <div class="imgcontainer">
+                <img src="./assets/Images/dbs-bank.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container form-group">
+                <div>
+                    <label for="emailid"><b>Email Id</b></label>
+                    <input type="text" class="form-control" placeholder="Enter Email id" name="email"
+                        [(ngModel)]="user.email" #emailField="ngModel" required [class.is-invalid]='emailField.invalid'>
+                    <small [class.d-none]='emailField.valid||emailField.untouched' class="text-danger">Email is
+                        required</small>
+                </div>
+                <div>
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" class="form-control" placeholder="Enter Password" name="password"
+                        [(ngModel)]="user.password" #passwordField="ngModel" required
+                        [class.is-invalid]='passwordField.invalid'>
+                    <small [class.d-none]='passwordField.valid||passwordField.untouched' class="text-danger">Password is
+                        required</small>
+                </div>
+                <button type="submit">Login</button>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <span>{{message1.message}}</span>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <span class="psw"><a routerLink='/register' href="#register" style="width:auto;">Register a
+                        User</a></span>
+            </div>
+        </form>
+    </div>
+</body> -->

@@ -1,0 +1,8 @@
+
+@media (max-width: 767px) {
+    img {
+      display: table;
+      margin: 0 auto;
+      
+    }
+ }

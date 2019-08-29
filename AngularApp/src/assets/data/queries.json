@@ -1,0 +1,38 @@
+[
+    {"question":
+                {"title":"java","question_id":"ruigl","user_id":"rdst","description":"rzzzxec"}
+        ,
+    "answers":[
+        {
+            "user_id":"xjycj","answer_id":"rdgxbg","question_id":"kuyd89","description":"uievukbu lveiy","like":8,"dislike":2
+        },
+        {
+            "user_id":"xjycj","answer_id":"rdgxbg","question_id":"kuyd89","description":"uievukbu lveiy","like":10,"dislike":2
+        }
+    ]},
+    {"question":
+        {"title":"java","question_id":"ruigl","user_id":"rdst","description":"rzzzxec"}
+        ,
+        "answers":[
+        {
+            "user_id":"xjycj","answer_id":"rdgxbg","question_id":"kuyd89","description":"uievukbu lveiy","like":8,"dislike":2
+        },
+        {
+            "user_id":"xjycj","answer_id":"rdgxbg","question_id":"kuyd89","description":"uievukbu lveiy","like":8,"dislike":2
+        },
+        {
+            "user_id":"xjycj","answer_id":"rdgxbg","question_id":"kuyd89","description":"uievukbu lveiy","like":10,"dislike":2
+        }
+    ]},
+    {"question":
+        {"title":"java","question_id":"ruigl","user_id":"rdst","description":"rzzzxec"}
+        ,
+        "answers":[
+        {
+            "user_id":"xjycj","answer_id":"rdgxbg","question_id":"kuyd89","description":"uievukbu lveiy","like":8,"dislike":2
+        },
+        {
+            "user_id":"xjycj","answer_id":"rdgxbg","question_id":"kuyd89","description":"uievukbu lveiy","like":10,"dislike":2
+        }
+    ]}
+ ]

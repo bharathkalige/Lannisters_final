@@ -1,0 +1,33 @@
+tr:nth-child(even) {
+    background-color: white;
+ 
+
+  
+  }
+  /* tr:nth-child(odd) {
+    background-color: firebrick;
+
+
+  
+  } */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 0px solid #ddd;
+    text-align: center;
+    border-radius: 25px;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 2px;
+  }
+  .trhead{
+    background-color: black; 
+    color:white;
+    object-fit: inherit;
+    font-size: 30px;
+    border-radius: 25px;
+  }
+ 

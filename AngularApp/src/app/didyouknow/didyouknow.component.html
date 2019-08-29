@@ -1,0 +1,29 @@
+<!-- <mat-table >
+    <mat-row class="trhead"> Did You Know</mat-row>
+       <mat-row *ngFor='let update of updateList'><span style='font-size:22px;'>&#9672;</span>{{update.line}}</mat-row>
+  
+</mat-table> -->
+<!-- <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<style>
+.striped {
+    color:white;
+    background-color:black;
+}
+</style>
+<body ng-app="myApp">
+
+<table ng-controller="myCtrl">
+<tr *ngFor='let update of updateList' ng-class-odd="'striped'">
+        <span style='font-size:22px;'>&#9672;</span>{{update.line}}
+</tr>
+</table>
+
+</body>
+</html> -->
+<table >
+        <th class="trhead"> Did You Know</th>
+           <tr *ngFor='let update of updateList' ng-class-odd="'striped'"><span style='font-size:25px;'>&#9672;</span>{{update.line}}</tr>
+      
+    </table>

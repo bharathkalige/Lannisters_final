@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <script>
+                function logged() {
+                 
+                  document.getElementById("log").innerHTML = "LogOut"
+                }
+                </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="topnav" [className]="var1">
+        <!-- <a style="float: left;" routerLink='/home'>DBS</a> -->
+        <a href="#" style="font-size:22px;" class="icon" (click)="myFunction()">&#9776;</a>
+        <a routerLink='/login' id="log" (click)="logged()">Login</a>
+        <a routerLink='/tq' href="#tq">Tech Queries</a>
+        <a routerLink='/challenges' href="#challenges">Challenges</a>
+        <a routerLink='/faq' href="#faq">FAQ</a>
+        <a routerLink='/chatbot' href="#chatbot">Ask a bot</a>
+        <a routerLink='/home' href="#home">Home</a>
+    </div>
+    <div style="color:red"></div>
+</body>
+
+</html>
